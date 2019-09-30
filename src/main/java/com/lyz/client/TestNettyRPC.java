@@ -1,6 +1,6 @@
-package cn.itcast.rpc.client;
+package com.lyz.client;
 
-import cn.itcast.rpc.clientStub.NettyRPCProxy;
+import com.lyz.clientStub.NettyRPCProxy;
 
 //服务调用方
 public class TestNettyRPC {

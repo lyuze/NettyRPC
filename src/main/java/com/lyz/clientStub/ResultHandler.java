@@ -1,4 +1,4 @@
-package cn.itcast.rpc.clientStub;
+package com.lyz.clientStub;
 
 import io.netty.channel.*;
 

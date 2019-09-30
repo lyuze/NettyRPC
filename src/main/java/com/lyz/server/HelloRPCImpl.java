@@ -1,4 +1,4 @@
-package cn.itcast.rpc.server;
+package com.lyz.server;
 
 public class HelloRPCImpl implements HelloRPC {
     @Override

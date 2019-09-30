@@ -1,4 +1,4 @@
-package cn.itcast.rpc.serverStub;
+package com.lyz.serverStub;
 
 import java.io.Serializable;
 

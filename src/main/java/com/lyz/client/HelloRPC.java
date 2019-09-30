@@ -1,4 +1,4 @@
-package cn.itcast.rpc.client;
+package com.lyz.client;
 
 public interface HelloRPC {
     String hello(String name);

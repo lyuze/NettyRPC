@@ -1,4 +1,4 @@
-package cn.itcast.rpc.client;
+package com.lyz.server;
 
 public interface HelloNetty {
     String hello();

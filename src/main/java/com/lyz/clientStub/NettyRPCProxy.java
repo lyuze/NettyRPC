@@ -1,6 +1,6 @@
-package cn.itcast.rpc.clientStub;
+package com.lyz.clientStub;
 
-import cn.itcast.rpc.serverStub.ClassInfo;
+import com.lyz.serverStub.ClassInfo;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
