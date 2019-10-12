@@ -12,7 +12,7 @@ public class InvokeHandler extends ChannelInboundHandlerAdapter {
     //得到某接口下某个实现类的名字
     private String getImplClassName(ClassInfo classInfo) throws Exception{
         //服务方接口和实现类所在的包路径
-        String interfacePath="cn.itcast.rpc.server";
+        String interfacePath="com.lyz.server";
         int lastDot = classInfo.getClassName().lastIndexOf(".");
         String interfaceName=classInfo.getClassName().substring(lastDot);
         Class superClass=Class.forName(interfacePath+interfaceName);
@@ -35,6 +35,7 @@ public class InvokeHandler extends ChannelInboundHandlerAdapter {
     @Override  //读取客户端发来的数据并通过反射调用实现类的方法
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ClassInfo classInfo = (ClassInfo) msg;
+        System.out.println(classInfo);
         Object clazz = Class.forName(getImplClassName(classInfo)).newInstance();
         Method method = clazz.getClass().getMethod(classInfo.getMethodName(), classInfo.getTypes());
         //通过反射调用实现类的方法
